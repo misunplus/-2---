@@ -108,7 +108,7 @@ $(function() {
 				newsIdx++;
 			}
 			moveFn();
-			console.log(newsIdx);
+			// console.log(newsIdx);
 		}, 4000);
 	};
 	newsAutoPlayFN(0);
@@ -131,6 +131,20 @@ $(function() {
 		newsIdx = $indicateBottom.index(this);
 		moveFn();
 	});
+
+	// 찾아오는길 셀렉트 박스
+	const selectGnb = $('#here > .here-containcer > nav > .menu > li > select');
+	const selectGnbOb = $('#here > .here-containcer > nav > .menu > li > select > option');
+
+	const selectlnb = $('#here > .here-containcer > nav > .option > li > select');
+
+	var idx = $('#SelectBoxId option').index($('#SelectBoxId option:selected'));
+
+	selectGnb.change(function() {
+		console.log($(this).val());
+		console.log('선택한 index : ' + idx);
+	});
+	// 상위 셀렉트 박스가 클릭됐을때
 
 	/******** footer *******/
 	const $familyBtn = $('#family-site');

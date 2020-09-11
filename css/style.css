@@ -650,7 +650,7 @@ section > .group-container {
 	color: #5a5e64;
 	font-size: 18px;
 	line-height: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 #here > .here-containcer > nav {
 	position: absolute;
@@ -662,9 +662,12 @@ section > .group-container {
 #here > .here-containcer > nav > .menu > li {
 }
 #here > .here-containcer > nav > .menu > li > select {
-	width: 165px;
-	height: 30px;
+	width: 160px;
 	margin-bottom: 10px;
+	padding: 4%; /* 여백으로 높이 설정 */
+	font-family: inherit; /* 폰트 상속 */
+	border: 1px solid #999;
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
 }
 #here > .here-containcer > nav > .menu > li > select > option {
 }
@@ -679,8 +682,12 @@ section > .group-container {
 	display: block;
 }
 #here > .here-containcer > nav > .option > li > select {
-	width: 165px;
-	height: 30px;
+	width: 160px;
+	margin-bottom: 10px;
+	padding: 4%; /* 여백으로 높이 설정 */
+	font-family: inherit; /* 폰트 상속 */
+	border: 1px solid #999;
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
 }
 #here > .here-containcer > nav > .option > li > select > option {
 }
@@ -692,6 +699,7 @@ section > .group-container {
 	display: block;
 	width: 73px;
 	height: 69px;
+	text-indent: -9999px;
 	background: url(./../images/btn_search.gif);
 	background-size: 73px 69px;
 	outline: 1px solid pink;
